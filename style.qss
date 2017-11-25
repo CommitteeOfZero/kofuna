@@ -1,10 +1,7 @@
+/******** GENERAL ********/
+
 QFrame#frame {
     border: 1px solid #404040;
-}
-
-QLabel#headerImage {
-    background: #fff;
-    padding: 8px 0px;
 }
 
 QWidget {
@@ -14,6 +11,25 @@ QWidget {
     font: 9pt "Segoe UI";
     color: #fff;
 }
+
+
+/******** CUSTOMISED CONTROLS ********/
+
+QPushButton[hasIcon=true] {
+    padding: 0px 4px;
+}
+
+QLabel#pageHeading {
+    font-weight: bold;
+}
+
+QLabel#headerImage {
+    background: #fff;
+    padding: 8px 0px;
+}
+
+
+/******** TAB BAR ********/
 
 QTabWidget::pane {
     margin-top: -1px;
@@ -36,6 +52,9 @@ QTabBar::tab {
 QTabBar::tab:selected {
     border-bottom: 1px solid #000;
 }
+
+
+/******** FORM CONTROLS ********/
 
 QProgressBar {
     border: 1px solid #fff;
@@ -69,10 +88,6 @@ QPushButton {
     border: 1px solid #fff;
     padding: 4px;
     font-weight: bold;
-}
-
-QPushButton[hasIcon=true] {
-    padding: 0px 4px;
 }
 
 QPushButton:pressed {
@@ -109,10 +124,7 @@ QComboBox QAbstractItemView {
     border: 1px solid #fff;
 }
 
-QLabel#pageHeading {
-    font-weight: bold;
-}
-
 QAbstractScrollArea {
+    /* QTextEdit etc. */
     border: 1px solid #fff;
 }

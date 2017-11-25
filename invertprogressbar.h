@@ -5,6 +5,10 @@
 #include <QProgressBar>
 #include <QPaintEvent>
 
+/**
+ * @brief QProgressBar using background color for label text covered by progress
+ *
+ */
 class InvertProgressBar : public QProgressBar {
     Q_OBJECT
    public:

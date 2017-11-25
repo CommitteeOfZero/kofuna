@@ -5,6 +5,10 @@
 #include <QCheckBox>
 #include <QPaintEvent>
 
+/**
+ * @brief QCheckBox with Win32 flat, white-on-black style
+ *
+ */
 class FlatCheckBox : public QCheckBox {
     Q_OBJECT
    public:
