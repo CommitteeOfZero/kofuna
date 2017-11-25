@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/kofuna/">
+        <file>radio/checked.png</file>
+        <file>radio/unchecked.png</file>
+        <file>style.qss</file>
+    </qresource>
+</RCC>
