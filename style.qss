@@ -200,6 +200,13 @@ QScrollBar::down-arrow:vertical {
     image: url(:/kofuna/scrollbar/downarrow.png);
 }
 
+QScrollBar::up-arrow:vertical:pressed,
+QScrollBar::down-arrow:vertical:pressed,
+QScrollBar::left-arrow:horizontal:pressed,
+QScrollBar::right-arrow:horizontal:pressed {
+    margin: 2px 0 0 2px;
+}
+
 QScrollBar::left-arrow:horizontal {
     image: url(:/kofuna/scrollbar/leftarrow.png);
 }
