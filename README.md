@@ -23,7 +23,6 @@ a.setStyleSheet(ts.readAll());
 
 ### Notes
 
-* Use `FlatCheckBox` in place of `QCheckBox` for now (this is soon to be replaced with bitmap-based style rules).
 * Use `InvertProgressBar` in place of `QProgressBar` for a pure white-on-black progress bar that remains readable.
 * The Windows style does not render scroll bars properly in high DPI mode.
 * Make a QFrame called `frame` filling the window to get a 1px dark border around `Qt::FramelessWindowHint` windows.

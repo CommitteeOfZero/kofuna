@@ -2,6 +2,12 @@
     <qresource prefix="/kofuna/">
         <file>radio/checked.png</file>
         <file>radio/unchecked.png</file>
+        <file>radio/checked@2x.png</file>
+        <file>radio/unchecked@2x.png</file>
+        <file>checkbox/checked.png</file>
+        <file>checkbox/unchecked.png</file>
+        <file>checkbox/checked@2x.png</file>
+        <file>checkbox/unchecked@2x.png</file>
         <file>style.qss</file>
     </qresource>
 </RCC>

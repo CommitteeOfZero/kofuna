@@ -111,6 +111,23 @@ QRadioButton::indicator::checked:pressed {
     image: url(:/kofuna/radio/checked.png);
 }
 
+QCheckBox::indicator {
+    width: 14px;
+    height: 14px;
+}
+
+QCheckBox::indicator::unchecked,
+QCheckBox::indicator:unchecked:hover,
+QCheckBox::indicator:unchecked:pressed {
+    image: url(:/kofuna/checkbox/unchecked.png);
+}
+
+QCheckBox::indicator::checked,
+QCheckBox::indicator::checked:hover,
+QCheckBox::indicator::checked:pressed {
+    image: url(:/kofuna/checkbox/checked.png);
+}
+
 QLineEdit {
     padding: 0px;
 }
