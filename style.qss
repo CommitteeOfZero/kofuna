@@ -99,15 +99,15 @@ QRadioButton::indicator {
     height: 12px;
 }
 
-QRadioButton::indicator::unchecked,
+QRadioButton::indicator:unchecked,
 QRadioButton::indicator:unchecked:hover,
 QRadioButton::indicator:unchecked:pressed {
     image: url(:/kofuna/radio/unchecked.png);
 }
 
-QRadioButton::indicator::checked,
-QRadioButton::indicator::checked:hover,
-QRadioButton::indicator::checked:pressed {
+QRadioButton::indicator:checked,
+QRadioButton::indicator:checked:hover,
+QRadioButton::indicator:checked:pressed {
     image: url(:/kofuna/radio/checked.png);
 }
 
@@ -116,15 +116,15 @@ QCheckBox::indicator {
     height: 14px;
 }
 
-QCheckBox::indicator::unchecked,
+QCheckBox::indicator:unchecked,
 QCheckBox::indicator:unchecked:hover,
 QCheckBox::indicator:unchecked:pressed {
     image: url(:/kofuna/checkbox/unchecked.png);
 }
 
-QCheckBox::indicator::checked,
-QCheckBox::indicator::checked:hover,
-QCheckBox::indicator::checked:pressed {
+QCheckBox::indicator:checked,
+QCheckBox::indicator:checked:hover,
+QCheckBox::indicator:checked:pressed {
     image: url(:/kofuna/checkbox/checked.png);
 }
 
@@ -144,4 +144,71 @@ QComboBox QAbstractItemView {
 QAbstractScrollArea {
     /* QTextEdit etc. */
     border: 1px solid #fff;
+}
+
+
+/******** SCROLL BAR ********/
+
+QScrollBar {
+    border: 0;
+    background: #000;
+}
+
+QScrollBar:vertical {
+    width: 22px;
+    margin: 22px 2px 22px 2px;
+}
+
+QScrollBar:horizontal {
+    height: 22px;
+    margin: 2px 22px 2px 22px;
+}
+
+QScrollBar::handle {
+    border: 1px solid #fff;
+    background: #000;
+}
+
+QScrollBar::add-line,
+QScrollBar::sub-line {
+    margin: 2px;
+    border: 1px solid #fff;
+    background: #000;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 20px;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 20px;
+}
+
+QScrollBar::sub-line:horizontal {
+    /* this one's not displayed by default */
+    subcontrol-position: left;
+}
+
+QScrollBar::up-arrow:vertical {
+    image: url(:/kofuna/scrollbar/uparrow.png);
+}
+
+QScrollBar::down-arrow:vertical {
+    image: url(:/kofuna/scrollbar/downarrow.png);
+}
+
+QScrollBar::left-arrow:horizontal {
+    image: url(:/kofuna/scrollbar/leftarrow.png);
+}
+
+QScrollBar::right-arrow:horizontal {
+    image: url(:/kofuna/scrollbar/rightarrow.png);
+}
+
+QScrollBar::add-page,
+QScrollBar::sub-page {
+    background: none;
 }
