@@ -1,5 +1,4 @@
-#ifndef INVERTPROGRESSBAR_H
-#define INVERTPROGRESSBAR_H
+#pragma once
 
 #include <QWidget>
 #include <QProgressBar>
@@ -22,5 +21,3 @@ class InvertProgressBar : public QProgressBar {
 
    public slots:
 };
-
-#endif  // INVERTPROGRESSBAR_H
