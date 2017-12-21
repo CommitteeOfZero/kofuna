@@ -90,6 +90,12 @@ QPushButton {
     font-weight: bold;
 }
 
+QPushButton:disabled {
+    border: 1px solid #a0a0a0;
+    background: #202020;
+    color: #a0a0a0;
+}
+
 QPushButton:pressed {
     padding: 6px 2px 2px 6px;
 }
@@ -126,6 +132,18 @@ QCheckBox::indicator:checked,
 QCheckBox::indicator:checked:hover,
 QCheckBox::indicator:checked:pressed {
     image: url(:/kofuna/checkbox/checked.png);
+}
+
+QCheckBox::indicator:unchecked:disabled,
+QCheckBox::indicator:unchecked:disabled:hover,
+QCheckBox::indicator:unchecked:disabled:pressed {
+    image: url(:/kofuna/checkbox/unchecked_disabled.png);
+}
+
+QCheckBox::indicator:checked:disabled,
+QCheckBox::indicator:checked:disabled:hover,
+QCheckBox::indicator:checked:disabled:pressed {
+    image: url(:/kofuna/checkbox/checked_disabled.png);
 }
 
 QLineEdit {

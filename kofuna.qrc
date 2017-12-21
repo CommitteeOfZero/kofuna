@@ -8,6 +8,10 @@
         <file>checkbox/unchecked.png</file>
         <file>checkbox/checked@2x.png</file>
         <file>checkbox/unchecked@2x.png</file>
+        <file>checkbox/checked_disabled.png</file>
+        <file>checkbox/unchecked_disabled.png</file>
+        <file>checkbox/checked_disabled@2x.png</file>
+        <file>checkbox/unchecked_disabled@2x.png</file>
         <file>scrollbar/uparrow.png</file>
         <file>scrollbar/downarrow.png</file>
         <file>scrollbar/leftarrow.png</file>
