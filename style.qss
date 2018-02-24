@@ -8,7 +8,7 @@ QWidget {
     background: #000;
     selection-background-color: #fff;
     selection-color: #000;
-    font: 9pt "Segoe UI";
+    font: 13px "Tahoma";
     color: #fff;
 }
 
@@ -20,12 +20,13 @@ QPushButton[hasIcon=true] {
 }
 
 QLabel#pageHeading {
+    font-size: 15px;
     font-weight: bold;
 }
 
 QLabel#headerImage {
     background: #fff;
-    padding: 8px 0px;
+    padding: 24px 0px;
 }
 
 
@@ -148,6 +149,12 @@ QCheckBox::indicator:checked:disabled:pressed {
 
 QLineEdit {
     padding: 0px;
+    padding-left: 4px;
+    background: #fff;
+    color: #000;
+    selection-color: #fff;
+    selection-background-color: #000;
+    border: 0;
 }
 
 QComboBox {
@@ -161,7 +168,8 @@ QComboBox QAbstractItemView {
 
 QAbstractScrollArea {
     /* QTextEdit etc. */
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
+    padding: -6px;
 }
 
 
@@ -174,12 +182,12 @@ QScrollBar {
 
 QScrollBar:vertical {
     width: 22px;
-    margin: 22px 2px 22px 2px;
+    margin: 25px 4px 25px 0px;
 }
 
 QScrollBar:horizontal {
     height: 22px;
-    margin: 2px 22px 2px 22px;
+    margin: 0px 25px 4px 25px;
 }
 
 QScrollBar::handle {
@@ -189,7 +197,6 @@ QScrollBar::handle {
 
 QScrollBar::add-line,
 QScrollBar::sub-line {
-    margin: 2px;
     border: 1px solid #fff;
     background: #000;
     subcontrol-origin: margin;
@@ -198,10 +205,12 @@ QScrollBar::sub-line {
 QScrollBar::add-line:vertical,
 QScrollBar::sub-line:vertical {
     height: 20px;
+    margin: 4px 4px 4px 0px;
 }
 
 QScrollBar::add-line:horizontal,
 QScrollBar::sub-line:horizontal {
+    margin: 0px 4px 4px 4px;
     width: 20px;
 }
 
