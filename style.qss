@@ -20,7 +20,7 @@ QPushButton[hasIcon=true] {
 }
 
 QLabel#pageHeading {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -170,6 +170,10 @@ QAbstractScrollArea {
     /* QTextEdit etc. */
     /*border: 1px solid #fff;*/
     padding: -6px;
+}
+
+QAbstractScrollArea#logBox {
+    font-size: 12px;
 }
 
 
