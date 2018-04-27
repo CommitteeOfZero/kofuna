@@ -12,7 +12,6 @@ QWidget {
     color: #fff;
 }
 
-
 /******** CUSTOMISED CONTROLS ********/
 
 QPushButton[hasIcon=true] {
@@ -29,7 +28,6 @@ QLabel#headerImage {
     padding: 24px 0px;
 }
 
-
 /******** TAB BAR ********/
 
 QTabWidget::pane {
@@ -44,16 +42,22 @@ QTabBar {
 
 QTabBar::tab {
     background: #000;
-    border: 1px solid #fff;
-    padding: 8px;
-    border-left: 0;
-    border-top: 0;
+    border-bottom: 1px solid #fff;
+    padding: 4px 8px;
+    /* make non-selected tabs look smaller */
+    margin-top: 8px;
 }
 
 QTabBar::tab:selected {
-    border-bottom: 1px solid #000;
+    border: 1px solid #fff;
+    border-bottom: 0;
+    margin-top: 0;
 }
 
+QTabBar::tab:first:selected {
+    /* don't show border on leftmost tab */
+    margin-left: -1px;
+}
 
 /******** FORM CONTROLS ********/
 
@@ -175,7 +179,6 @@ QAbstractScrollArea {
 QAbstractScrollArea#logBox {
     font-size: 12px;
 }
-
 
 /******** SCROLL BAR ********/
 
