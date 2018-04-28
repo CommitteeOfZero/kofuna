@@ -168,6 +168,15 @@ QComboBox {
 
 QComboBox QAbstractItemView {
     border: 1px solid #fff;
+    padding: 2px;
+}
+
+QComboBox::drop-down {
+    border: 0;
+}
+
+QComboBox::down-arrow {
+    image: url(:/kofuna/scrollbar/downarrow.png);
 }
 
 QAbstractScrollArea {
