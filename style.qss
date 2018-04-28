@@ -164,6 +164,7 @@ QLineEdit {
 QComboBox {
     border: 1px solid #fff;
     padding: 2px;
+    padding-left: 4px;
 }
 
 QComboBox QAbstractItemView {
