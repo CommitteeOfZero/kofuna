@@ -125,6 +125,8 @@ QRadioButton::indicator:checked:pressed {
 QCheckBox::indicator {
     width: 14px;
     height: 14px;
+    padding-top: 2px;
+    subcontrol-position: left top;
 }
 
 QCheckBox::indicator:unchecked,
