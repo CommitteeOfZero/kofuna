@@ -265,3 +265,10 @@ QScrollBar::add-page,
 QScrollBar::sub-page {
     background: none;
 }
+
+/******** DIALOGS ********/
+
+QDialogButtonBox QPushButton {
+    margin: 6px;
+    min-width: 56px;
+}
