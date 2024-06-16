@@ -1,9 +1,5 @@
 /******** GENERAL ********/
 
-QFrame#frame {
-    border: 1px solid #404040;
-    z-index: 99;
-}
 
 QWidget {
     background: #000;
