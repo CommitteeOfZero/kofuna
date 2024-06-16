@@ -1,6 +1,5 @@
 /******** GENERAL ********/
 
-
 QWidget {
     background: #000;
     selection-background-color: #fff;
